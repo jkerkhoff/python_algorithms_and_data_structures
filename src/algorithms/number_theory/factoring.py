@@ -5,6 +5,10 @@ def trial_division(n: int) -> list[tuple[int, int]]:
     """Factor an integer using trial division.
 
     Result will be a list of (prime, exponent) tuples.
+
+    Complexity: O(sqrt(n))
+
+    Note that the input size is O(lg n), making the complexity exponential.
     """
     if n < 2:
         raise ValueError("input must be an integer larger than 1")
